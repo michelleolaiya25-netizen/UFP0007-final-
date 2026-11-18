@@ -1,15 +1,14 @@
 class Ticket:
     def __init__(self,name,base_price):
-        self.__name = name
-        self.base_price =vbase_price
+        self.__name =name
+        self.base_price =base_price
 
     def get_name(self):
-        return self.__name
-    
+        return self.base_price
     def price(self):
-        return self.base_price 
+        return
 
-
-class StudentTicket(Ticket):
-    def price(self):
-        return super().price()*0.5
+concert =Ticket("Concert",200)
+museum =Ticket("Museum",150)
+print(concert.name, concert.price())
+print(museum.name, musem.price())
